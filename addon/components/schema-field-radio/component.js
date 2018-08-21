@@ -41,16 +41,9 @@ export default Component.extend({
   }),
 
   actions: {
-    changed() {
+    changed(value) {
       let document = this.get('document');
       let key = this.get('key');
-      let value = this.$('input[type="radio"]:checked').val();
-
-      if (value && value.toLowerCase() === 'true') {
-        value = true;
-      } else {
-        value = false;
-      }
 
       document.set(key, value);
       this.set('value', value);

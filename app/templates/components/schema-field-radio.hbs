@@ -1,12 +1,6 @@
-<div class="radio">
-  <div class="radio-button-option">
-    {{#radio-button value=true groupValue=value name=key changed="changed" disabled=property.readonly}}
-      <span>{{trueLabel}}</span>
-    {{/radio-button}}
-  </div>
-  <div class="radio-button-option">
-    {{#radio-button value=false groupValue=value name=key changed="changed" disabled=property.readonly}}
-      <span>{{falseLabel}}</span>
-    {{/radio-button}}
-  </div>
-</div>
+{{#paper-radio-group
+  groupValue=(readonly value)
+  onChange=(action "changed") as |group|}}
+  {{#group.radio value=true primary=true}} {{trueLabel}} {{/group.radio}}
+  {{#group.radio value=false primary=true}} {{falseLabel}} {{/group.radio}}
+{{/paper-radio-group}}

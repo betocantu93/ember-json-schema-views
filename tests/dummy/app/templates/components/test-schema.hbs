@@ -1,0 +1,19 @@
+<div class="layout">
+  <div>
+  <h1> Formulario </h1>
+    {{#each-property properties=properties as |key property type|}}
+      <label>{{property.displayProperties.title}}</label>
+      {{component (concat 'schema-field-' type) key=key property=property document=document changed=(action "documentChanged" document)}}
+    {{/each-property}}
+  </div>
+ 
+
+  <div>
+ <h1>Documento</h1>
+
+  {{#each-in documentDump as |property value|}}
+    <li>{{property}}: {{value}}</li>
+  {{/each-in}}
+  </div>
+ 
+</div>

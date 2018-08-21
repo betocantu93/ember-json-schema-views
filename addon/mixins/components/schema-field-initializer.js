@@ -33,6 +33,7 @@ export default Mixin.create({
       if (typeof value === 'undefined') {
         value = this.getCurrentValue();
       }
+    
       let jsonDocument = this.get('document');
       let key = this.get('key');
 

@@ -1,8 +1,8 @@
-<input
-  class="form-control"
-  type="text"
-  value={{value}}
-  name={{key}}
-  placeholder={{property.displayProperties.placeholder}}
-  disabled={{property.readonly}}
-  oninput={{action "update" value="target.value"}}>
+{{paper-input
+  type=type
+  value=value 
+  name=key 
+  placeholder=property.displayProperties.placeholder 
+  disabled=property.readonly 
+  onChange=(action "update")
+}}

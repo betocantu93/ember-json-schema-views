@@ -45,11 +45,11 @@ export default Component.extend({
   }),
 
   trueLabel: computed('property.displayProperties.labels.trueLabel', function() {
-    return `${this.get('property.displayProperties.labels.trueLabel') || DEFAULT_TRUE_LABEL}::true`;
+    return `${this.get('property.displayProperties.labels.trueLabel') || DEFAULT_TRUE_LABEL}`;
   }),
 
   falseLabel: computed('property.displayProperties.labels.falseLabel', function() {
-    return `${this.get('property.displayProperties.labels.falseLabel') || DEFAULT_FALSE_LABEL}::false`;
+    return `${this.get('property.displayProperties.labels.falseLabel') || DEFAULT_FALSE_LABEL}`;
   }),
 
   name: alias('key'),

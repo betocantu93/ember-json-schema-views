@@ -6,10 +6,12 @@
   disabled=property.readonly
   name=key
   updateSelectionValue=false as |option selected|}}
-  <div class="checkbox {{if property.readonly 'disabled' null}}">
-    <label>
-        {{input type="checkbox" checked=selected}}
-        <span>{{option}} {{recommended-label value=option property=property}}</span>
-    </label>
-  </div>
+
+  {{#paper-checkbox value=selected onChange=(action (mut selected)) disabled=property.readonly}}
+    <span>{{option}} {{recommended-label value=option property=property}}</span>
+  {{/paper-checkbox}}
+  
 {{/multiselect-checkboxes}}
+
+
+

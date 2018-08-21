@@ -34,6 +34,7 @@
     "ember-cli-htmlbars-inline-precompile": "^1.0.0",
     "ember-cli-inject-live-reload": "^1.4.1",
     "ember-cli-qunit": "^4.1.1",
+    "ember-cli-sass": "^7.1.7",
     "ember-cli-shims": "^1.2.0",
     "ember-cli-sri": "^2.1.0",
     "ember-cli-uglify": "^2.0.0",
@@ -43,7 +44,6 @@
     "ember-load-initializers": "^1.0.0",
     "ember-resolver": "^4.0.0",
     "ember-source": "~2.18.0",
-    "ember-toggle": "^5.2.1",
     "ember-truth-helpers": "^2.0.0",
     "eslint-plugin-ember": "^5.0.0",
     "eslint-plugin-node": "^5.2.1",
@@ -54,8 +54,8 @@
   ],
   "dependencies": {
     "ember-cli-babel": "^6.6.0",
-    "ember-multiselect-checkboxes": "0.10.3",
-    "ember-radio-button": "1.2.1"
+    "ember-multiselect-checkboxes": "^0.11.1",
+    "ember-paper": "^1.0.0-beta.8"
   },
   "ember-addon": {
     "configPath": "tests/dummy/config"

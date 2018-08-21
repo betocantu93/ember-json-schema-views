@@ -3,6 +3,7 @@ import Component from '@ember/component';
 import { computed } from '@ember/object';
 
 export function getPropertyInputType(property) {
+  console.log(property);
   if (property.type === 'array') {
     return 'checkbox';
   }
@@ -12,6 +13,7 @@ export function getPropertyInputType(property) {
   }
 
   if (property.validValues && Array.isArray(property.validValues)) {
+    console.log('select');
     return 'select';
   }
 

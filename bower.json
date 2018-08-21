@@ -1,9 +1,0 @@
-{
-  "name": "ember-json-schema-views",
-  "dependencies": {
-    "ember": "components/ember#release"
-  },
-  "resolutions": {
-    "ember": "release"
-  }
-}
